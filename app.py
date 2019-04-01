@@ -94,9 +94,3 @@ result.index = weather1904.index
 
 with open('submission.csv', 'w', newline='\n') as f:
     result.to_csv(f,date_format='%Y%m%d')
- 
-    
-
-
-
-
