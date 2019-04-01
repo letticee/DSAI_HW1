@@ -65,7 +65,7 @@ y_predict = lm_workday2.predict(lm_workday_trainX2)
     
  #%% predict
 dateparse = lambda x: pd.datetime.strptime(x, '%Y%m%d')
-with open('201904_temp.csv', 'r') as f:   
+with open('201904_temp_gov.csv', 'r') as f:   
      weather1904 = pd.read_csv(f, parse_dates=['date'], date_parser=dateparse, index_col=0)
 max_temper1904 = pd.Series(weather1904['T Max'],index=weather1904.index)
 min_temper1904 = pd.Series(weather1904['T Min'],index=weather1904.index)
